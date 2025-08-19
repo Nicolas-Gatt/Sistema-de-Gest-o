@@ -5,18 +5,18 @@ class Program
 {
     static void Main()
     {
-        string connectionString = "Server=localhost;Database=Gestao_Estoque;Trusted_Connection=True;";
+        string connectionString = "Server=******;Database=Gestao_Estoque;Trusted_Connection=True;";
 
         using (SqlConnection conexao = new SqlConnection(connectionString))
         {
             try
             {
                 conexao.Open();
-                Console.WriteLine("✅ Conexão bem-sucedida!");
+                Console.WriteLine("Conexão bem-sucedida!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ Erro: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
             }
         }
     }
@@ -24,7 +24,7 @@ class Program
 
 public void InserirProduto(string nome, string codigo, int quantidade, decimal preco, string fornecedor)
 {
-    string connectionString = "Server=localhost;Database=SistemaGestao;Trusted_Connection=True;";
+    string connectionString = "Server=******;Database=SistemaGestao;Trusted_Connection=True;";
 
     using (SqlConnection conexao = new SqlConnection(connectionString))
     {
@@ -44,7 +44,7 @@ public void InserirProduto(string nome, string codigo, int quantidade, decimal p
 
 public void ListarProdutos()
 {
-    string connectionString = "Server=localhost;Database=SistemaGestao;Trusted_Connection=True;";
+    string connectionString = "Server=*******;Database=SistemaGestao;Trusted_Connection=True;";
 
     using (SqlConnection conexao = new SqlConnection(connectionString))
     {
