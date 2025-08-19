@@ -7,7 +7,7 @@
             },
             "previewLimit": 50,
             "server": "localhost",
-            "port": 3306,
+            "port": 3303,
             "driver": "MySQL",
             "name": "Gestao_Estoque",
             "database": "GestaoEstoque",
